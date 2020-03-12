@@ -7,7 +7,7 @@ if __name__ == "__main__":
     repo = Repo('.')
     ok = True
     for check in custom_checks:
-        response = 0
+        response = 1
         response = eval(f'checks.{check}(repo)')
         if response == 1:
             print(f"Check of {check} failed!")
